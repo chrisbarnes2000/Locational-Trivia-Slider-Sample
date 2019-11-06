@@ -18,19 +18,9 @@
 <body>
     {% include 'partials/navbar.html' %}
     
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    <ul>
-        {% for message in messages %}
-        <li>{{ message }}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-    {% endwith %}
-    
     <div class='container'>
         {% block content %}
-        BODY CONTENT GOES HERE
+            BODY CONTENT GOES HERE
         {% endblock %}
     </div>
     
